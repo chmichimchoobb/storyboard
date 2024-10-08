@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saving The Sacred Lotus From Kalabala</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #D1BB9E;
+        }
+        header {
+            background-color: #F7EED3;
+            color: #000000;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #674636;
+        }
+        nav {
+            background-color: #9e8063;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #050303a9;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 20px;
+        }
+        nav a:hover {
+            background-color: #a79885f3;
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            display: none;
+            background-color: #fff;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .visible {
+            display: block;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .about-us div {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+        .outline-button {
+            border: 2px solid #333;
+            background-color: white;
+            color: #333;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-radius 0.3s ease;
+            border-radius: 25px;
+        }
+        .outline-button:hover {
+            background-color: #c97220;
+            color: #333;
+        }
+        .centered {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid #333;
+            width: 400px; /* Adjust width as needed */
+            height: auto;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(252, 211, 211, 0.473);
+            color: rgb(66, 51, 51);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Group 5 Wayang Kulit</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('storyboard')">Storyboard</a>
+        <a href="#" onclick="showSection('storyline')">Storyline</a>
+        <a href="#" onclick="showSection('characters')">Characters</a>
+    </nav>
+
+    <section id="storyboard" class="visible">
+        <h2>Welcome to the Storyboard of our Wayang Kulit Puppet Show from Group 5</h2>
+        <h2>TITLE: SAVING THE SACRED LOTUS FROM KALABALA</h2>
+        <img src="462138561_1086151759692656_5488500537764610246_n (1).png" alt="Storyboard of Saving the Sacred Lotus" width="400">
+        <p>This is the storyboard of the show, designed by Yasmien.</p>
+    </section>
+
+    <section id="storyline">
+        <h2 class="centered"><strong>STORYLINE</strong></h2>
+        <p>The Sacred Lotus represents unity and peace in the Hastina world. But when Kalabala, the evil magician, steals the lotus, chaos begins. Under Semar's guidance, Princess Srikandi and her brother Arjuna confront Kalabala and his traps. Together, they defeat Kalabala and bring the Sacred Lotus back to life, reviving the realm and inspiring bravery, confidence, and unity. The message of the Sacred Lotus points out the value of working together to overcome misfortune.</p>
+    </section>
+
+    <section id="characters">
+        <h2>The Characters in This Show</h2>
+        <div class="about-us">
+            <ul>
+                <li>Chloe as DEWI KUNTI - The Wise Queen of the kingdom</li>
+                <li>Mark as YHUDISTRA - The King of the Land Hastina</li>
+                <li>Althea as SEMAR - The guardian spirit of the Sacred Lotus</li>
+                <li>Guilbert as ARJUNA - The Prince of Kingdom Hastina</li>
+                <li>Yasmien as SRIKANDI - A brave princess of Kingdom Hastina</li>
+                <li>Seth as KALABALA - An evil Sorcerer who took the Sacred Lotus of Hastina</li>
+            </ul>
+            <h2>Narrators of the Show</h2>
+            <ul>
+                <li>Althea</li>
+                <li>Seth</li>
+                <li>Chloe</li>
+            </ul>
+
+            <h2>Credits</h2>
+            <ul>
+                <li>Yasmien - The one who made the storyboard</li>
+                <li>Althea - The one who made the webpage, and half of the script</li>
+                <li>Chloe - The one who gave the layout</li>
+                <li>Guilbert - The one who made half of the script</li>
+                <li>Seth and Mark - For the puppets</li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.classList.remove('visible');
+            });
+            document.getElementById(sectionId).classList.add('visible');
+        }
+    </script>
+
+    <div class="footer">
+        <p>by GROUP 5</p>
+    </div>
+</body>
+</html>
